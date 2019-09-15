@@ -7,3 +7,7 @@
 
 
 [Adobe Color](https://color.adobe.com/)
+
+삽질의 이야기
+1. node-sass가 정상적으로 설치되지 않음 => 루트 디렉토리에 `.npmrc`를 만들고 `unsafe-perm=true`를 추가
+2. 통신해야하는 포트번호가 중요함.
