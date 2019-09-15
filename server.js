@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 
 const dev = process.env.NODE_ENV !== 'production';
 const prod = process.env.NODE_ENV === 'production';
-const port =  process.env.PORT || 8081;
+const PORT =  process.env.PORT || 8081;
 const app = next({ dev });
 const handle = app.getRequestHandler();
 dotenv.config();
