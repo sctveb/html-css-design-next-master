@@ -8,6 +8,7 @@
 
 [Adobe Color](https://color.adobe.com/)
 
-삽질의 이야기
-1. node-sass가 정상적으로 설치되지 않음 => 루트 디렉토리에 `.npmrc`를 만들고 `unsafe-perm=true`를 추가
-2. 통신해야하는 포트번호가 중요함.
+#### 삽질의 이야기
+1. node-sass가 정상적으로 설치되지 않음 => 루트 디렉토리에 `.npmrc`를 만들고 `unsafe-perm=true`를 추가.
+2. github에는 올리지 않지만, Elastic Beanstalk에 필요한 경우에는 `.ebignore`를 만들어 `.gitignore`처럼 관리.
+3. 통신해야하는 포트번호가 중요함. Elastic Beanstalk의 NGINX는 기본적으로 통신내용을 PORT 80 -> PORT 8081로 전달함.
