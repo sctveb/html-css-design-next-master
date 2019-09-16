@@ -14,6 +14,99 @@ body {
     margin: 0;
     font-family: '맑은 고딕', 'Apple SD Gothic Neo', 'sans-serif';
 }
+
+/* header A */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9)
+}
+
+.headA {
+    display: inline-block;
+    line-height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #5D9AB2;
+    background-color: var(--main-color);
+    color: #fff;
+    color: var(--text-bright-color);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+/* header B */
+.headB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.headB a {
+    display: block;
+    padding: 15px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.headB a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+@media (max-width: 767px) {
+    header .container-small {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .headB {
+        display: none;
+    }
+
+    .headC {
+        margin-right: 10px;
+        padding: 0;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 28px;
+        opacity: 0.5;
+        cursor: pointer;
+        transition: opacity 0.3s;
+    }
+
+    .headC {
+        opacity: 0.3;
+    }
+}
+
+@media (min-width: 768px) {
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .headB {
+        display: block !important;
+    }    
+    .headB ul {
+        display: flex;
+    }
+    .headC {
+        display: none;
+    }
+}
+
+
 /* content A */
 .conA {
     display: flex;
@@ -277,7 +370,7 @@ body {
     }
 }
 
-/* footerA */
+/* footer A */
 footer {
     color: #fff;
     color: var(--text-bright-color);
@@ -312,7 +405,7 @@ footer .container {
     text-decoration: none;
 }
 
-/* footerB */
+/* footer B */
 .footB h3 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -342,14 +435,14 @@ footer .container {
     margin-bottom: 20px;
 }
 
-/* footerC */
+/* footer C */
 .footC {
     font-size:12px;
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
 }
 
-/* footerD */
+/* footer D */
 .footD {
     margin-top: 20px;
 }
@@ -409,3 +502,4 @@ footer .container {
         flex: 0 0 100%;
     }
 }
+
