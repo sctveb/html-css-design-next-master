@@ -34,6 +34,47 @@ class Content extends Component {
             </p>
           </div>
         </article>
+
+        <aside className="related">
+          <ul>
+            <li>
+              <a href="#">
+                <div className="photo" style={{backgroundImage: "url(/static/image/p01.jpg)"}}></div>
+                <div className="text">
+                  <h2>노란 꽃으로 꾸며보기</h2>
+                  <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div className="photo" style={{backgroundImage: "url(/static/image/p02.jpg)"}}></div>
+                <div className="text">
+                  <h2>야채 키우기 일기</h2>
+                  <p>최근 키우고 있는 야채들이 무럭무럭 자라고 있어요. 재미로 야채 키우는 것을 일기로 작성해보겠습니다.</p>
+                </div>
+              </a>
+            </li>            
+            <li>
+              <a href="#">
+                <div className="photo" style={{backgroundImage: "url(/static/image/p03.jpg)"}}></div>
+                <div className="text">
+                  <h2>딸기 맛있게 먹는 방법</h2>
+                  <p>가끔 딸기를 여러 곳에서 많이 받아 처리가 힘들었는데요, 이제 괜찮아요. 다양한 방법으로 맛있게 요리할 수 있습니다.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div className="photo" style={{backgroundImage: "url(/static/image/p04.jpg)"}}></div>
+                <div className="text">
+                  <h2>악기 다루기</h2>
+                  <p>취미로 피아노와 기타 같은 악기를 다뤄보는 것이 어떨까요?</p>
+                </div>
+              </a>
+            </li>       
+          </ul>
+        </aside>
       </React.Fragment>
     );
   }

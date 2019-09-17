@@ -21,7 +21,7 @@ class Navbar extends Component {
   render() {
     return (
       <React.Fragment>
-        <header>
+        <header className="head-color">
           <div className="container">
             <div className="container-small">
               <Link href="/">

@@ -3,6 +3,11 @@ header {
     border-bottom: solid 1px #ddd;
 }
 
+.head-color + * {
+    margin-top: 70px;
+}
+
+
 /* content */
 .post .container {
     max-width: 800px;
